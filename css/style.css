@@ -8,7 +8,6 @@ body {
 
 /* Estilos do header */
 #header {
-    text-align: center;
     background-color: #2C3E50;
     color: white;
     padding: 20px;
@@ -26,7 +25,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Navegação */
+/* Navegação / Contatos */
 #contatos ul {
     list-style-type: none;
     padding: 0;
@@ -36,7 +35,6 @@ body {
     margin: 10px 0;
     font-size: 1.1rem;
     font-style: oblique;
-
 }
 
 #contatos a {
@@ -49,26 +47,32 @@ body {
     text-decoration: underline;
 }
 
+#contatos a:focus {
+    outline: 2px solid #3498db;
+}
+
 /* Estilos do resumo */
 .resumo p {
     font-style: italic;
     font-weight: 400;
     max-width: 900px;
+    margin: auto;
     text-align: justify;
 }
 
-/* Estilos para as seções de habilidades e educação */
+/* Títulos de seção */
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     color: #2C3E50;
 }
 
+/* Habilidades e listas */
 ol {
     margin-left: 20px;
 }
 
-/* Estilos de links adicionais */
+/* Links adicionais */
 #links-adicionais ul {
     list-style-type: none;
     padding: 0;
@@ -78,25 +82,20 @@ ol {
     margin: 5px 0;
 }
 
-a[href="https://github.com/gusteugenio"] {
+.github-link {
     color: #e74c3c;
     font-weight: bold;
 }
 
-#links-adicionais a:hover {
+.github-link:hover {
     color: #16a085;
 }
 
 /* Rodapé */
 #footer {
-    text-align: center;
     background-color: #34495E;
     color: white;
     padding: 10px;
     font-size: 0.9rem;
-}
-
-/* Pseudo-classe de foco para links */
-#contatos a:focus {
-    outline: 2px solid #3498db;
+    text-align: center;
 }
